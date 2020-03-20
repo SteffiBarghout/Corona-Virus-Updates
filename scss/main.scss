@@ -1,6 +1,11 @@
-$color: red;
+$color:whitesmoke;
 
 body {
-    background:green;
+    background:gray;
     color: $color;
+}
+
+.myVideo {
+    min-width: 100%;
+    min-height: 50 vh;
 }

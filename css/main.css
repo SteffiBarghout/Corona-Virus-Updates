@@ -1,5 +1,10 @@
 body {
-  background: green;
-  color: red;
+  background: gray;
+  color: whitesmoke;
+}
+
+.myVideo {
+  min-width: 100%;
+  min-height: 50 vh;
 }
 /*# sourceMappingURL=main.css.map */
