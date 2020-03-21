@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>COVID-19 AWARE</title>
+	<title>HTML5 Admin Template</title>
 	
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oxygen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
 	
-	<!-- Font Awesome -->
+	<!-- Template Styles -->
 	<script src="https://kit.fontawesome.com/a7b782e4d7.js" crossorigin="anonymous"></script>
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/styles.css">
 	
 	<!-- CSS Reset -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -19,26 +16,17 @@
 	<!-- Milligram CSS minified -->
 	<link rel="stylesheet" href="css/milligram.min.css">
 	
-	<!-- Bootstrap/jQuery -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   
-	<!-- Firebase References -->
-	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
-	 
-	<link rel="icon" type="image/png" href="assets/favicon.png"/>
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="css/styles.css">
 	
 </head>
 
 <body>
-
 	<!-- Navbar Top -->
 	<div class="navbar">
 		<div class="row">
 			<div class="column column-30 col-site-title"><a href="#" class="site-title float-left">COVID-19 AWARE</a></div>
-		</div>
+		</div>	
 	</div>
 
 	<!-- Navbar Left Side -->
@@ -56,12 +44,12 @@
 
 		<!-- Hero -->
 		<section id="main-content" class="column column-offset-20">
-			<div class="row-grid-responsive">
+			<div class="row grid-responsive">
 				<div class="column page-heading">
 					<div class="large-card">
 						<h1>COVID-19 AWARE</h1>
-						<h3 class="text-large">Centralized information on COVID-19 </h3>
-						<h5 class="text-large">Situation Updates, Media Resources and Stock Market News at your Fingertips </h5>
+						<p class="text-large">Centralized information on COVID-19</p>
+						<p>Situation Updates, Media Resources and Stock Market News at your Fingertips </p>
 					</div>
 				</div>
 			</div>
@@ -95,11 +83,12 @@
 				</div>
 			</div>
 			
+			
 			<!--News-->
-			<h5 class="mt-2">News</h5><a class="anchor" name="news"></a>
+			<h5 class="mt-2">NEWS</h5><a class="anchor" name="news"></a>
 			<div class="row grid-responsive mt-1">
 
-				<!--New York Times API-->
+				<!--NY Times API-->
 				<div class="column">
 					<div class="card">
 						<div class="card-title">
@@ -107,12 +96,19 @@
 							<div class="clearfix"></div>
 						</div>
 						<div class="card-block">
-				
+							<div class="mt-1">
+								<img src="http://via.placeholder.com/45x45" alt="profile photo" class="circle float-left profile-photo" width="45" height="auto">
+								<div class="float-left ml-1">
+									placeholder for API
+								</div>
+								<div class="clearfix"></div>
+								<hr class="m-0 mb-2" />
+							</div>
 						</div>
-					</div>
+					</div>	
 				</div>
 
-				<!--Twitter API-->
+				<!--NY Times API-->
 				<div class="column">
 					<div class="card">
 						<div class="card-title">
@@ -120,15 +116,22 @@
 							<div class="clearfix"></div>
 						</div>
 						<div class="card-block">
-
+							<div class="mt-1">
+								<img src="http://via.placeholder.com/45x45" alt="profile photo" class="circle float-left profile-photo" width="45" height="auto">
+								<div class="float-left ml-1">
+									placeholder for API
+								</div>
+								<div class="clearfix"></div>
+								<hr class="m-0 mb-2" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<!--Stock Market-->
 			<h5>Stock Market</h5><a class="anchor" name="stock"></a>
-			<div class="row grid-responsive">
+			<div class="row-grid-responsive">
 				<div class="column column-100">
 					<div class="card">
 						<div class="card-title">
@@ -142,9 +145,9 @@
 					</div>
 				</div>
 			</div>
-
-			<!--Firebase Comments-->
-			<h5 class="mt-2">Comments</h5><a class="anchor" name="comments"></a>
+			
+			<!--Comments-->
+			<h5 class="mt-2">Comments</h5><a class="anchor" name="forms"></a>
 			<div class="row grid-responsive">
 				<div class="column ">
 					<div class="card">
@@ -153,31 +156,24 @@
 						</div>
 						<div class="card-block">
 							<form>
-								<div class="form-group">
-									<label for="formGroupExampleInput">Name</label>
-									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
-								</div>
+								<fieldset>
+									<label for="nameField">Name</label>
+									<input type="text" placeholder="John Smith" id="nameField">
 
-								<div class="form-group">
-									<label for="formGroupExampleInput2">Location</label>
-									<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Anywhere, USA">
-								</div>
-							
-								<div class="form-group">
-								  <label for="exampleFormControlTextarea1">Comments </label>
-								  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								</div>
+									<label for="locationField">Location</label>
+									<input type="text" placeholder="Anywhere, USA" id="nameField">
+
+									<label for="commentField">Comment</label>
+									<textarea placeholder="I am COVID-19 Safe" id="commentField"></textarea>
+									
+									<input class="button-primary" type="submit" value="Submit">
+								</fieldset>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			
-		</section>
-	</div>
-	
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
+
 </body>
 </html> 
