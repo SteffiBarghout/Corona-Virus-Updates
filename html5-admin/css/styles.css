@@ -7,6 +7,16 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: 2D3E42}
 
+  /* .footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: left;
+  } */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -.1rem;
