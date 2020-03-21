@@ -3,6 +3,7 @@
 //pass each country code into the country detail api
 //Retrieve the numbers for each country
 //For a map need latitude and longitude coordinates for each country
+//
 $(document).ready(function () {
   let worldMap;
   $.getJSON("https://cors-anywhere.herokuapp.com/https://github.com/steffisbootcampdrive/Project1/blob/feat/map/map.json", function (json) { //getting the map.json data
