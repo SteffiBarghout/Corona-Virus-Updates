@@ -1,6 +1,6 @@
-$primary-color: #853A52;
+$primary-color: #0B1222;
 $primary-color-hover: #8BA99C;
-$dark-gray: #D6D9CE;
+$dark-gray: #C1C6D2;
 $medium-gray: #888;
 $light-gray: #f9f9f9;
 $custom-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -264,273 +264,31 @@ a.anchor {
 	margin-bottom: 2.2rem;
 }
 
-//Alerts & Badges
 
-.alert {
-	padding: 10px 20px;
-	border-radius: .5rem;
-	margin-bottom: 20px;
-	color: #fff;
-	background-color: $medium-gray;
-	.fa {
-		margin-right: 5px;
-	}
-}
-
-.badge {
-	padding: 5px 10px;
-	border-radius: 499px;
-	color: #fff;
-	font-size: .8em;
-	height: 28px;
-	min-width: 28px;
-	text-align: center;
-	background-color: $medium-gray;
-}
-
-.background-primary {
-	background: $primary-color;
-}
-
-.background-success {
-	background: #aee460;
-}
-
-.background-warning {
-	background: #f4cd4a;
-}
-
-.background-danger {
-	background: #fc4660;
-}
-
-.progress-bar {
-	display: block;
-	background: $light-gray;
-	height: 10px;
-	border-radius: 499rem;
-	margin-bottom: 20px;
-	margin-top: -20px;
-	.progress {
-		display: block;
-		height: 10px;
-		border-radius: 499rem;
-	}
-}
-
-/* Mobile */
 
 @media (max-width: 640px) {
-	.row, .row.grid-responsive {
-		flex-direction: column;
-	}
-	
-	.row.grid-responsive .column,
-	.row.grid-responsive .column.column-10,
-	.row.grid-responsive .column.column-20,
-	.row.grid-responsive .column.column-25,
-	.row.grid-responsive .column.column-33,
-	.row.grid-responsive .column.column-40,
-	.row.grid-responsive .column.column-50,
-	.row.grid-responsive .column.column-60,
-	.row.grid-responsive .column.column-66,
-	.row.grid-responsive .column.column-67,
-	.row.grid-responsive .column.column-75,
-	.row.grid-responsive .column.column-80,
-	.row.grid-responsive .column.column-90,
-	.row.grid-responsive .column.column-100 {
-		display: block;
-		width: 100%;
-		max-width: 100%;
-	}
 	
 	.navbar {
 		height: auto;
 		position: static;
-		.user-section {
-			text-align: left;
-		}
-		
-		.row .column,
-		.row .column.column-10,
-		.row .column.column-20,
-		.row .column.column-25,
-		.row .column.column-33,
-		.row .column.column-40,
-		.row .column.column-50,
-		.row .column.column-60,
-		.row .column.column-66,
-		.row .column.column-67,
-		.row .column.column-75,
-		.row .column.column-80,
-		.row .column.column-90,
-		.row .column.column-100 {
-			width: 100%;
-			max-width: 100%;
-			padding: 0 20px;
-		}
-		
-		a.site-title {
-			margin-left: 0;
-		}
-		
-		.col-search {
-			.search-btn {
-				top: 12px;
-			}
-		}
-		
-		input[type=text] {
-			margin: 0;
-		}
 	}
-	
+		
 	#sidebar {
-		position: static;
+		position: relative;
 		width: 100%!important;
 		padding: 10px 20px!important;
-		margin: 0;
+		margin: 0px auto;
 		height: auto;
 		left: 0;
 	}
-	
-	#main-content {
-		width: 100%!important;
-		display: block!important;
-		margin: 0;
-		padding: 1.5rem!important;
-	}
-	
-	.card {
-		.card-title, .card-block {
-			padding: 10px 15px;
-		}
-	}
-	
-	.user-section {
-		display: none;
+	#charts {
+
 	}
 }
 
-
-/* Tablet */
-
 @media (min-width: 640px) and (max-width: 768px) {
-	#sidebar {
-		width: 30%!important;
-	}
-	
-	#main-content {
-		width: 70%!important;
-		margin-left: 30%;
-	}
-	
-	.navbar {
-		.row .column,
-		.row .column.column-10,
-		.row .column.column-20,
-		.row .column.column-25,
-		.row .column.column-33,
-		.row .column.column-40,
-		.row .column.column-50,
-		.row .column.column-60,
-		.row .column.column-66,
-		.row .column.column-67,
-		.row .column.column-75,
-		.row .column.column-80,
-		.row .column.column-90,
-		.row .column.column-100 {
-			width: 50%;
-			max-width: 50%;
-		}
-		
-		.site-title {
-			font-size: 18px!important;
-			padding-top: 5px;
-		}
-	}
-	
-	.row.grid-responsive {
-		flex-direction: column;
-	}
-	
-	.row.grid-responsive .column,
-	.row.grid-responsive .column.column-10,
-	.row.grid-responsive .column.column-20,
-	.row.grid-responsive .column.column-25,
-	.row.grid-responsive .column.column-33,
-	.row.grid-responsive .column.column-40,
-	.row.grid-responsive .column.column-50,
-	.row.grid-responsive .column.column-60,
-	.row.grid-responsive .column.column-66,
-	.row.grid-responsive .column.column-67,
-	.row.grid-responsive .column.column-75,
-	.row.grid-responsive .column.column-80,
-	.row.grid-responsive .column.column-90,
-	.row.grid-responsive .column.column-100 {
-		display: block;
-		width: 100%;
-		max-width: 100%;
-	}
-	
-	.card {
-		.canvas-wrapper {
-			width: 90%;
-		}
-	}
-	
-	.user-section {
-		margin-right: 20px;
-		.username {
-			display: none;
-		}
-	}
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
-	.row.grid-responsive {
-		flex-direction: column;
-	}
-	
-	.row.grid-responsive .column,
-	.row.grid-responsive .column.column-10,
-	.row.grid-responsive .column.column-20,
-	.row.grid-responsive .column.column-25,
-	.row.grid-responsive .column.column-33,
-	.row.grid-responsive .column.column-40,
-	.row.grid-responsive .column.column-50,
-	.row.grid-responsive .column.column-60,
-	.row.grid-responsive .column.column-66,
-	.row.grid-responsive .column.column-67,
-	.row.grid-responsive .column.column-75,
-	.row.grid-responsive .column.column-80,
-	.row.grid-responsive .column.column-90,
-	.row.grid-responsive .column.column-100 {
-		display: block;
-		width: 100%;
-		max-width: 100%;
-	}
-	
-	#sidebar {
-		width: 30%!important;
-	}
-	
-	#main-content {
-		width: 70%!important;
-		margin-left: 30%;
-	}
-	
-	.card {
-		.canvas-wrapper {
-			width: 95%;
-		}
-	}
-	
-	.user-section {
-		margin-right: 20px;
-		.username {
-			display: none;
-		}
-	}
 }
 
