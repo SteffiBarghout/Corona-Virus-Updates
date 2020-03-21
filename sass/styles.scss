@@ -1,11 +1,10 @@
-//Variables
-$background-color: #1E2329;
 $primary-color: #853A52;
-$primary-color-hover: #25beae;
-$dark-gray: #333;
+$primary-color-hover: #8BA99C;
+$dark-gray: #D6D9CE;
 $medium-gray: #888;
 $light-gray: #f9f9f9;
 $custom-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$background-color: #1E2329;
 
 //General Styles
 body {
@@ -13,7 +12,7 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
-	font-size: 1.6em;
+	font-size: 14px;
 	font-family: $custom-font;
 	color: $dark-gray;
 }
@@ -42,16 +41,16 @@ h4 {
 }
 
 h5, h6 {
-	color: #555;
+	color: $dark-gray;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	font-size: 14px;
 	letter-spacing: .05em;
 	font-weight: 600;
 	margin-bottom: 1rem;
 }
 
 h6 {
-	color: $medium-gray;
+	color: $dark-gray;
 	font-size: 0.8em;
 }
 
@@ -97,15 +96,9 @@ hr {
 	margin: 3.0rem 0;
 }
 
-.circle {
-	border-radius: 499rem;
-}
-
 td, th {
 	border-bottom: 0.1rem solid #eee;
 }
-
-/*For demo purposes only*/
 
 a.anchor {
 	display: block;
@@ -114,26 +107,6 @@ a.anchor {
 	visibility: hidden;
 }
 
-.grid-example {
-	margin-left: 1rem;
-	margin-right: 1rem;
-	.column {
-		background: #ddd;
-		text-align: center;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		margin-bottom: 10px;
-	}
-}
-
-.credit {
-	text-align: center;
-	margin-top: 30px;
-	color: #666;
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
 
 /*Margins*/
 
@@ -189,137 +162,21 @@ a.anchor {
 	margin-left: 3rem;
 }
 
-/*Forms Elements & Buttons*/
-
-input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select {
-	border: 1px solid $light-gray!important;
-}
-
-input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus {
-	border: 1px solid $primary-color!important;
-}
-
-.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
-	background-color: $primary-color;
-	border: 0.1rem solid $primary-color;
-	border-radius: 499rem;
-	font-size: 1.15rem;
-}
-
-.button:focus, .button:hover, button:focus, button:hover, input[type='button']:focus, input[type='button']:hover, input[type='reset']:focus, input[type='reset']:hover, input[type='submit']:focus, input[type='submit']:hover {
-	background-color: $dark-gray;
-	border-color: $dark-gray;
-	color: #fff;
-	outline: 0;
-}
-
-.button[disabled], button[disabled], input[type='button'][disabled], input[type='reset'][disabled], input[type='submit'][disabled] {
-	cursor: default;
-	opacity: .5;
-}
-
-.button[disabled]:focus, .button[disabled]:hover, button[disabled]:focus, button[disabled]:hover, input[type='button'][disabled]:focus, input[type='button'][disabled]:hover, input[type='reset'][disabled]:focus, input[type='reset'][disabled]:hover, input[type='submit'][disabled]:focus, input[type='submit'][disabled]:hover {
-	background-color: $primary-color;
-	border-color: $primary-color;
-}
-
-.button.button-outline, button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline {
-	background-color: transparent;
-	color: $primary-color;
-}
-
-.button.button-outline:focus, .button.button-outline:hover, button.button-outline:focus, button.button-outline:hover, input[type='button'].button-outline:focus, input[type='button'].button-outline:hover, input[type='reset'].button-outline:focus, input[type='reset'].button-outline:hover, input[type='submit'].button-outline:focus, input[type='submit'].button-outline:hover {
-	background-color: transparent;
-	border-color: $dark-gray;
-	color: $dark-gray;
-}
-
-.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover, button.button-outline[disabled]:focus, button.button-outline[disabled]:hover, input[type='button'].button-outline[disabled]:focus, input[type='button'].button-outline[disabled]:hover, input[type='reset'].button-outline[disabled]:focus, input[type='reset'].button-outline[disabled]:hover, input[type='submit'].button-outline[disabled]:focus, input[type='submit'].button-outline[disabled]:hover {
-	border-color: inherit;
-	color: $primary-color;
-}
-
-.button.button-clear, button.button-clear, input[type='button'].button-clear, input[type='reset'].button-clear, input[type='submit'].button-clear {
-	background-color: transparent;
-	border-color: transparent;
-	color: $primary-color;
-}
-
-.button.button-clear:focus, .button.button-clear:hover, button.button-clear:focus, button.button-clear:hover, input[type='button'].button-clear:focus, input[type='button'].button-clear:hover, input[type='reset'].button-clear:focus, input[type='reset'].button-clear:hover, input[type='submit'].button-clear:focus, input[type='submit'].button-clear:hover {
-	background-color: transparent;
-	border-color: transparent;
-	color: $dark-gray;
-}
-
-.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover, button.button-clear[disabled]:focus, button.button-clear[disabled]:hover, input[type='button'].button-clear[disabled]:focus, input[type='button'].button-clear[disabled]:hover, input[type='reset'].button-clear[disabled]:focus, input[type='reset'].button-clear[disabled]:hover, input[type='submit'].button-clear[disabled]:focus, input[type='submit'].button-clear[disabled]:hover {
-	color: $primary-color;
-}
-
-input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select {
-	border: 0.1rem solid #eee!important;
-	border-radius: .4rem;
-	box-shadow: none;
-}
-
-input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], select {
-	max-width: 60rem;
-}
-
-input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus {
-	border-color: $primary-color;
-	outline: 0;
-}
-
-select {
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#eeeeee" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-	padding-right: 3.0rem;
-}
-
-select:focus {
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#f02563" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
-}
-
 //Layout
 .navbar {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	background: #fff;
+	background: $primary-color;
 	height: 80px;
 	padding: 20px 0;
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, .05);
 	a.site-title {
-		color: #222;
-		color: $primary-color;
+		color: $primary-color-hover;
 		font-size: 2.3rem;
 		font-weight: bold;
 		display: block;
 		margin: 0 20px 10px 20px;
-	}
-	
-	.col-search {
-		position: relative;
-		.search-btn {
-			font-size: 22px;
-			color: $medium-gray;
-			position: absolute;
-			top: 6px;
-			right: 42px;
-		}
-		
-		.search-btn:hover {
-			color: $dark-gray;
-		}
-	}
-	
-	input[type=text] {
-		margin-top: -.6rem;
-		margin-left: -1rem;
-		padding-left: 2rem;
-		background: $light-gray;
-		border-radius: 499rem;
-		border: none;
-		height: 50px;
 	}
 }
 
@@ -327,15 +184,16 @@ select:focus {
 	position: fixed;
 	z-index: 0;
 	width: 20%!important;
-	background: #fff;
+	background: $primary-color;
 	padding: 10px 30px!important;
 	box-shadow: 3px 0px 8px rgba(0, 0, 0, .05);
-	margin-top: 80px;
+	margin-top: 50px;
 	height: 100%;
 	h1, h2, h3, h4, h5, h6 {
-		color: $dark-gray;
+		color: $primary-color-hover;
 		margin-top: 20px;
 		margin-bottom: 0;
+		font-size: 18px;
 	}
 	
 	ul {
@@ -349,7 +207,8 @@ select:focus {
 			a {
 				display: block;
 				padding: 10px 20px;
-				color: $medium-gray;
+				color: $dark-gray;
+				font-size: 14px;
 				.fa {
 					margin-right: 5px;
 				}
@@ -365,17 +224,20 @@ select:focus {
 
 #main-content {
 	width: 80%!important;
-	padding: 20px 3.5rem!important;
-	margin-top: 95px;
+	padding: 10px 3.5rem!important;
+	margin-top: 40px;
 	margin-right: 12px;
 	.page-heading {
 		margin-bottom: 20px;
 	}
 }
 
+.row-grid-responsive {
+	color: $primary-color;
+}
+
 .card {
-	background: #fff;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, .05);
+	box-shadow: 0px 0px 25px $medium-gray;
 	margin-bottom: 2.2rem;
 	.canvas-wrapper {
 		width: 98%;
@@ -388,10 +250,6 @@ select:focus {
 			margin: 0;
 			padding: 0;
 		}
-		
-		.badge {
-			margin-top: 3px;
-		}
 	}
 	
 	.card-block {
@@ -400,36 +258,10 @@ select:focus {
 }
 
 .large-card {
-	background: #fff;
+	background: $primary-color-hover;
 	padding: 30px;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, .05);
+	box-shadow: 0px 0px 25px $medium-gray;
 	margin-bottom: 2.2rem;
-}
-
-.user-section {
-	a {
-		float: right;
-	}
-	margin-top: -8px;
-	margin-right: 40px;
-	img {
-		margin-right: 10px;
-		float: left;
-	}
-	
-	.username {
-		color: $dark-gray;
-		float: right;
-		text-align: left;
-		h4 {
-			margin-bottom: -.5rem;
-		}
-		
-		p {
-			color: $medium-gray;
-			font-size: .9em;
-		}
-	}
 }
 
 //Alerts & Badges
@@ -701,3 +533,4 @@ select:focus {
 		}
 	}
 }
+
