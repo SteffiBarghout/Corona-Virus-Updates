@@ -1,5 +1,6 @@
 //Variables
-$primary-color: #35cebe;
+$background-color: #1E2329;
+$primary-color: #853A52;
 $primary-color-hover: #25beae;
 $dark-gray: #333;
 $medium-gray: #888;
@@ -8,7 +9,7 @@ $custom-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 //General Styles
 body {
-	background: $light-gray;
+	background: $background-color;
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
