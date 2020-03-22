@@ -18,14 +18,14 @@
 	
 	<!-- CSS -->
 	<!-- <link rel="stylesheet" href="../css/styles.css"> -->
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="../css/styles.css">
 
 	<!-- Firebase References -->
 	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="../assets/green-logo.png"/>
+	<link rel="icon" type="image/png" href="../assets/corona-4912186_1280.png"/>
 	
 
 </head>
@@ -40,7 +40,7 @@
 			
 			<div class="column column-50">
 				<div class="user-section"><a href="#">
-					<img src="../assets/green-logo.png" alt="logo" class="float-right profile-photo" width="50px" height="50px"></a></div>
+					<img src="../assets/corona-4912186_1280.png" alt="logo" class="float-right profile-photo" width="50px" height="50px"></a></div>
 				</div>
 			</div>
 		</div>
@@ -63,11 +63,16 @@
 			<div class="row grid-responsive">
 				<div class="column page-heading">
 					<div class="large-card">
-						<h1>COVID-19 AWARE</h1>
-						<p class="text-large">Centralized information on COVID-19</p>
-						<p>Situation Updates, Media Resources and Stock Market News at your Fingertips </p>
-						
-						<p>COVID-19 Response Fund <br> <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate' target="_blank"><button>Donate</button></a></p> 
+						<h1>COVID-19 AWARE: Centralized Information</h1>
+						<h4>Situation Updates, Media Resources and Stock Market News at your Fingertips </h4>
+						<br>
+						<div class="card border-danger mb-3" id="red-border" style="max-width: 300px; text-align: center;">
+							<div class="card-header">COVID-19 Response Fund</div>
+							<div class="card-body text-danger">
+								<br> 
+								<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate' target="_blank"><button>Donate</button></a></p> 
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -179,12 +184,12 @@
 									<input type="text" placeholder="John Smith" id="nameField">
 
 									<label for="locationField">Location</label>
-									<input type="text" placeholder="Anywhere, USA" id="nameField">
+									<input type="text" placeholder="Anywhere, USA" id="locationField">
 
 									<label for="commentField">Comment</label>
 									<textarea placeholder="I am COVID-19 Safe" id="commentField"></textarea>
 									
-									<input class="button-primary" type="submit" value="Submit">
+									<button>Submit</button>
 								</fieldset>
 							</form>
 						</div>
