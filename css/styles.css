@@ -29,11 +29,6 @@ input[type='text']:hover {
   border-color: #e50000;
 }
 
-#red-border {
-  border: solid, 2px;
-  border-color: #e50000;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -.1rem;
