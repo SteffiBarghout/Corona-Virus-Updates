@@ -13,22 +13,6 @@ body {
   opacity: .7;
 }
 
-textarea {
-  border-color: #e50000;
-}
-
-textarea:hover {
-  border-color: #e50000;
-}
-
-input[type='text'] {
-  border-color: #e50000;
-}
-
-input[type='text']:hover {
-  border-color: #e50000;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -.1rem;
@@ -90,9 +74,7 @@ button {
   border-color: #e50000;
 }
 
-button:hover {
-  background-color: #002846;
-}
+
 
 .navbar {
   position: fixed;
