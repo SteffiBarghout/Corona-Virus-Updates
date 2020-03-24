@@ -1,180 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>COVID-19 AWARE</title>
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
-	
-	<!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/a7b782e4d7.js" crossorigin="anonymous"></script>
-	
-	<!-- CSS Reset -->
-	<link rel="stylesheet" href="css/normalize.css">
-	
-	<!-- Milligram CSS minified -->
-	<link rel="stylesheet" href="css/milligram.min.css">
-	
-	<!-- CSS -->
-	<!-- <link rel="stylesheet" href="../css/styles.css"> -->
-	<link rel="stylesheet" href="../css/styles.css">
+    <meta charset="utf-8">
+    <title>COVID-19 AWARE</title>
 
-	<!-- Firebase References -->
-	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="../assets/corona-4912186_1280.png"/>
-	
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a7b782e4d7.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="css/milligram.min.css">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/corona-4912186_1280.png" />
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-	<!-- Navbar Top -->
-	<div class="navbar">
-		<div class="row">
-			<div class="column column-50 col-site-title">
-				<a href="#" class="site-title float-left">COVID-19 AWARE</a>
-			</div>
-			
-			<div class="column column-50">
-				<div class="user-section"><a href="#">
-					<img src="../assets/corona-4912186_1280.png" alt="logo" class="float-right profile-photo" width="50px" height="50px"></a></div>
-				</div>
-			</div>
-		</div>
+    <!-- Navbar Top -->
+    <div class="navbar">
+        <div class="row">
+            <div class="column column-50 col-site-title">
+                <a href="#" class="site-title float-left">COVID-19 AWARE</a>
+            </div>
 
-	<!-- Navbar Left Side -->
-	<div class="row">
-		<div id="sidebar" class="column">
-			<h5>Navigation</h5>
-			<ul>
-				<li><a href="#"><em class="fa fa-home"></em> Home</a></li>
-				<li><a href="#charts"><em class="fa fa-chart-line"></em> Charts</a></li>
-				<li><a href="#news"><em class="fa fa-newspaper"></em> News</a></li>
-				<li><a href="#stock"><em class="fa fa-hand-holding-usd"></em> Stock Market</a></li>
-				<li><a href="#comments"><em class="fa fa-pencil-square-o"></em> Comments</a></li>
-			</ul>
-		</div>
+            <div class="column column-50">
+                <div class="user-section">
+                    <a href="#">
+                        <img src="../assets/corona-4912186_1280.png" alt="logo" class="float-right profile-photo" width="50px" height="50px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Hero -->
-		<section id="main-content" class="column column-offset-20">
-			<div class="row grid-responsive">
-				<div class="column page-heading">
-					<div class="large-card">
-						<h1>COVID-19 AWARE: Centralized Information</h1>
-						<h4>Situation Updates, Media Resources and Stock Market News at your Fingertips </h4>
-						<br>
-						<div class="card border-danger mb-3" id="red-border" style="max-width: 300px; text-align: center;">
-							<div class="card-header">COVID-19 Response Fund</div>
-							<div class="card-body text-danger">
-								<br> 
-								<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate' target="_blank"><button>Donate</button></a></p> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<!--Charts-->
-			<h5>Charts</h5><a class="anchor" name="charts"></a>
-			<div class="row grid-responsive">
-				<div class="column column-50">
-					<div class="card">
-						<div class="card-title">
-							<h2>Heat Map</h2>
-						</div>
-						<div class="card-block">
-							<div class="canvas-wrapper">
-								<canvas class="chart" id="line-chart" height="auto" width="auto"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column column-50">
-					<div class="card">
-						<div class="card-title">
-							<h2>Bar Chart</h2>
-						</div>
-						<div class="card-block">
-							<div class="canvas-wrapper">
-								<canvas class="chart" id="bar-chart" height="auto" width="auto"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			<!--News-->
-			<h5 class="mt-2">NEWS</h5><a class="anchor" name="news"></a>
-			<div class="row grid-responsive mt-1">
+    <!-- Navbar Left Side -->
+    <div class="row">
+        <div id="sidebar" class="column">
+            <h5>Navigation</h5>
+            <ul>
+                <li><a href="#"><em class="fa fa-home"></em> Home</a></li>
+                <li><a href="#charts"><em class="fa fa-chart-line"></em> Charts</a></li>
+                <li><a href="#news"><em class="fa fa-newspaper"></em> News</a></li>
+                <li><a href="#stock"><em class="fa fa-hand-holding-usd"></em> Stock Market</a></li>
+                <li><a href="#comments"><em class="fa fa-pencil-square-o"></em> Comments</a></li>
+            </ul>
+        </div>
 
-				<!--NY Times API-->
-				<div class="column column-100">
-					<div class="card">
-						<div class="card-title">
-							<h2>New York Times</h2>
-						</div>
-						<div class="card-block">
-							<div class="canvas-wrapper">
-								<canvas class="chart" id="new-york-times" height="auto" width="auto"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+        <!-- Hero -->
+        <section id="main-content" class="column column-offset-20">
+            <div class="row grid-responsive">
+                <div class="column page-heading">
+                    <div class="large-card">
+                        <h1>COVID-19 AWARE: Centralized Information</h1>
+                        <h4>Situation Updates, Media Resources and Stock Market News at your Fingertips </h4>
+                        <br>
+                        <div class="card border-danger mb-3" id="red-border" style="max-width: 300px; text-align: center;">
+                            <div class="card-header">COVID-19 Response Fund</div>
+                            <div class="card-body text-danger">
+                                <br>
+                                <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate' target="_blank"><button>Donate</button></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<!--Stock Market-->
-			<h5>Stock Market</h5><a class="anchor" name="stock"></a>
-			<div class="row-grid-responsive">
-				<div class="column column-100">
-					<div class="card">
-						<div class="card-title">
-							<h2>Alpha Vantage</h2>
-						</div>
-						<div class="card-block">
-							<div class="canvas-wrapper">
-								<canvas class="chart" id="alpha-advantage" height="auto" width="auto"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<!--Comments-->
-			<h5 class="mt-2">Comments</h5><a class="anchor" name="comments"></a>
-			<div class="row grid-responsive">
-				<div class="column ">
-					<div class="card">
-						<div class="card-title">
-							<h3>Firebase Form</h3>
-						</div>
-						<div class="card-block">
-							<form>
-								<fieldset>
-									<label for="nameField">Name</label>
-									<input type="text" placeholder="John Smith" id="nameField">
+            <!--Charts-->
+            <h5>Charts</h5>
+            <a class="anchor" name="charts"></a>
+            <div class="row grid-responsive">
+                <div class="column column-50">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Heat Map</h2>
+                        </div>
+                        <div class="card-block">
+                            <div class="canvas-wrapper">
+                                <canvas class="chart" id="line-chart" height="auto" width="auto"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-50">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Bar Chart</h2>
+                        </div>
+                        <div class="card-block">
+                            <div class="canvas-wrapper">
+                                <canvas class="chart" id="bar-chart" height="auto" width="auto"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-									<label for="locationField">Location</label>
-									<input type="text" placeholder="Anywhere, USA" id="locationField">
 
-									<label for="commentField">Comment</label>
-									<textarea placeholder="I am COVID-19 Safe" id="commentField"></textarea>
-									
-									<button>Submit</button>
-								</fieldset>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+            <!--News-->
+            <h5 class="mt-2">NEWS</h5>
+            <a class="anchor" name="news"></a>
+            <div class="row grid-responsive mt-1">
 
-			<!--Footer-->
-			<div class="footer">
-				<p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
-			</div>
+                <!--NY Times API-->
+                <div class="column column-100">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>New York Times</h2>
+                        </div>
+                        <div class="card-block">
+                            <div class="canvas-wrapper">
+                                <canvas class="chart" id="new-york-times" height="auto" width="auto"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Stock Market-->
+            <h5>Stock Market</h5>
+            <a class="anchor" name="stock"></a>
+            <div class="row-grid-responsive">
+                <div class="column column-100">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Alpha Vantage</h2>
+                        </div>
+                        <div class="card-block">
+                            <div class="canvas-wrapper">
+                                <canvas class="chart" id="alpha-advantage" height="auto" width="auto"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Comments-->
+            <h5 class="mt-2">Comments</h5>
+            <a class="anchor" name="comments"></a>
+            <div class="row grid-responsive">
+                <div class="column ">
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>How has the CoronaVirus Impacted</h3>
+                        </div>
+                        <div class="card-block">
+                            <form action="#" onsubmit="event.preventDefault(); postComment()">
+                                <fieldset>
+                                    <label for="nameField">Name</label>
+                                    <input type="text" placeholder="John Smith" id="name">
+
+                                    <label for="locationField">Location</label>
+                                    <input type="text" placeholder="Anywhere, USA" id="location">
+
+                                    <label for="commentField">Comment</label>
+                                    <textarea placeholder="I am COVID-19 Safe" id="comment"></textarea>
+
+                                    <button>Submit</button>
+                                </fieldset>
+                            </form>
+                            <h5><span>Comments</span></h5>
+                            <div id="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <script src="Comments Javascript/comments.js"></script>
+            </div>
+
+            <!--Footer-->
+            <div class="footer">
+                <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
+            </div>
 
 </body>
-</html> 
+
+</html>
