@@ -1,51 +1,33 @@
-
 var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=JYwtkfx6a3Ws8JzbSi0QWBfJNAymWxen";
 
-$.ajax({url: queryURL, method: "GET"})
-    .done(function(response){
+/*$.ajax({url: queryURL, method: "GET"})
+    .then(function(response){
         console.log(response.response.docs);
+*/
 
-    });
+function updatePage(NYTData) {
 
-    //$("button").on("click", function() {
-        // Grabbing and storing the data-aritcle property value from the button
-        //var article = $(this).attr("data-article");
-  
-        // Constructing a queryURL using the search name
-        //var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=JYwtkfx6a3Ws8JzbSi0QWBfJNAymWxen";
-  
-        // Performing an AJAX request with the queryURL
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        })
-          // After data comes back from the request
-          .then(function(response) {
-            //console.log(queryURL);
-  
-            console.log(response);
-            // storing the data from the AJAX request in the results variable
-            var results = response.response.docs;
-  
-            // Looping through each result item
-            for (var i = 0; i < results.length; i++) {
-  
-              // Creating and storing a div tag
-              var articleDiv = $("<div>");
-  
-              // Creating a paragraph tag with the result item's url
-              var p = $("<p>").text("Web Link: " + results[i].web_url);
-  
-              // Appending the paragraph tag to the articleDiv
-              articleDiv.append(p);
-              
-  
-              // Prependng the articleDiv to the HTML page in the "#card-block" div
-              $("#card-block").prepend(articleDiv);
-            };
-          
+  console.log(NYTData.response.docs.length);
+  // Loop through and build elements for the defined number of articles
+  for (var i = 0; i < NYTData.response.docs.length; i++) {
+    // Get specific article info for current index
+    var article = NYTData.response.docs[i];
+    console.log(article);
+    var newsDiv = $('<div>');
+    // var abstract = $('<p>');
+    // abstract.html(article.abstract);
+    var link = $('<a>');
+    link.attr('href', article.web_url);
+    // newsDiv.append(abstract);
+    link.text(article.abstract);
+    newsDiv.append(link);
+     $('#nytarticles').append(newsDiv);
+    
 
+  }
 
-
-
-      });
+}
+$.ajax({
+  url: queryURL,
+  method: "GET"
+}).then(updatePage);
