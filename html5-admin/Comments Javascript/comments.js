@@ -41,5 +41,5 @@ database.ref().on("child_added", function(snapshot) {
 
 var addComment = function(name, location, comment) {
     var comments = document.getElementById("comments");
-    comments.innerHTML = name + location + comment + comments.innerHTML;
+    comments.innerHTML = "<hr><h4>" + name + " from " + location + " says:</h4><p>" + comment + "</p>" + comments.innerHTML;
 };
