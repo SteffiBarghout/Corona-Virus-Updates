@@ -17,7 +17,6 @@ $(document).ready(function () {
     }
 
     $.ajax(settings).done(function (response) {
-        console.log(response);
         let data = response.data.covid19Stats;
         for (let i = 0; i < data.length; i++) {
             if (!countryArray.includes(data[i].country)) {
