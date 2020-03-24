@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corona Virus Updates</title>
+
+  <!-- Bootstrap/jQuery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="stylesheet.css" />
+
+  <!--Google Fonts-->
+
+  <!-- <link href="placeholder" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <!--Title-->
+  <div class="jumbotron">
+    <h1 class="display-4 text-center">Title</h1>
+  </div>
+
+  <!--Row 1-->
+  <div class="row row-cols-1 row-cols-md-2">
+    <!--News-->
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">News</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Map-->
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Map</h5>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Form-->
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Contact Form</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <!--Row 2-->
+  <div class="row row-cols-1 row-cols-md-2">
+    <!--Twitter-->
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Twitter</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Graph-->
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Map</h5>
+          <div id="chart"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Stocks-->
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Contact Form</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br />
+  <!--Footer Content-->
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <p>Group Project Copyright &copy; 2020</p>
+    <p>Steffi, Sean, Joewan and Lindsey</p>
+  </nav>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="corona.js"></script>
+
+  <script src="map/map.js"></script>
+  <script src="chart/chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+
+</html>
