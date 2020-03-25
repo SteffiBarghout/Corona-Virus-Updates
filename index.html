@@ -32,6 +32,8 @@
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -96,7 +98,7 @@
             </div>
             <div class="card-block">
               <div class="canvas-wrapper">
-                <canvas class="chart" id="line-chart" height="auto" width="auto"></canvas>
+                <div id="map"></div>
               </div>
             </div>
           </div>
@@ -108,7 +110,7 @@
             </div>
             <div class="card-block">
               <div class="canvas-wrapper">
-                <canvas class="chart" id="bar-chart" height="auto" width="auto"></canvas>
+                <div id="chart"></div>
               </div>
             </div>
           </div>
@@ -192,8 +194,10 @@
           Steffi Wellington</p>
       </div>
       <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script src="map/map.js" async></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&callback=initMap"
+        async defer></script>
 
-      <script src="map/map.js"></script>
       <script src="chart/chart.js"></script>
 </body>
 
