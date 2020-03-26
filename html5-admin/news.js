@@ -1,15 +1,14 @@
+// New York Times API and API KEY
 var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=coronavirus&api-key=JYwtkfx6a3Ws8JzbSi0QWBfJNAymWxen";
 
-/*$.ajax({url: queryURL, method: "GET"})
-    .then(function(response){
-        console.log(response.response.docs);
-*/
-
+//Function to updatePage HTML Elements
 function updatePage(NYTData) {
 
   console.log(NYTData.response.docs.length);
-  // Loop through and build elements for the defined number of articles
+
+  // Loop through and build elements for the articles
   for (var i = 0; i < NYTData.response.docs.length; i++) {
+   
     // Get specific article info for current index
     var article = NYTData.response.docs[i];
     console.log(article);
