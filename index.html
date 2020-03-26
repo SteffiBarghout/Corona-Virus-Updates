@@ -187,46 +187,44 @@
                         </div>
                     </div>
                 </div>
+                <script src="Stocks API /stocks.js"></script>
             </div>
-            <script src="Stocks API /stocks.js"></script>
-    </div>
+            <!--Comments-->
+            <h5 class="mt-2">Comments</h5>
+            <a class="anchor" name="comments"></a>
+            <div class="row grid-responsive">
+                <div class="column ">
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>How has the CoronaVirus Impacted You?</h3>
+                        </div>
+                        <div class="card-block">
+                            <form action="#" onsubmit="event.preventDefault(); postComment()">
+                                <fieldset>
+                                    <label for="nameField">Name</label>
+                                    <input type="text" placeholder="John Smith" id="name">
 
-    <!--Comments-->
-    <h5 class="mt-2">Comments</h5>
-    <a class="anchor" name="comments"></a>
-    <div class="row grid-responsive">
-        <div class="column ">
-            <div class="card">
-                <div class="card-title">
-                    <h3>How has the CoronaVirus Impacted You?</h3>
+                                    <label for="locationField">Location</label>
+                                    <input type="text" placeholder="Anywhere, USA" id="location">
+
+                                    <label for="commentField">Comment</label>
+                                    <textarea placeholder="I am COVID-19 Safe" id="comment"></textarea>
+
+                                    <button>Submit</button>
+                                </fieldset>
+                            </form>
+                            <h5><span>Comments</span></h5>
+                            <div id="comments"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <form action="#" onsubmit="event.preventDefault(); postComment()">
-                        <fieldset>
-                            <label for="nameField">Name</label>
-                            <input type="text" placeholder="John Smith" id="name">
-
-                            <label for="locationField">Location</label>
-                            <input type="text" placeholder="Anywhere, USA" id="location">
-
-                            <label for="commentField">Comment</label>
-                            <textarea placeholder="I am COVID-19 Safe" id="comment"></textarea>
-
-                            <button>Submit</button>
-                        </fieldset>
-                    </form>
-                    <h5><span>Comments</span></h5>
-                    <div id="comments"></div>
-                </div>
+                <script src="Comments Javascript/comments.js"></script>
             </div>
-        </div>
-        <script src="Comments Javascript/comments.js"></script>
-    </div>
 
-    <!--Footer-->
-    <div class="footer">
-        <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
-    </div>
+            <!--Footer-->
+            <div class="footer">
+                <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
+            </div>
 
 </body>
 
