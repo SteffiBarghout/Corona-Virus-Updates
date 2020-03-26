@@ -24,7 +24,8 @@ $.ajax({
     console.log("Last Refreshed: " + response.last.refreshed);
     console.log("Timezone: " + response.timezone);
 });*/
-var url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=8C8UISNGQZSOTMZ9';
+//var url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=8C8UISNGQZSOTMZ9";
+var url = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=8C8UISNGQZSOTMZ9";
 
 $.ajax({
     url: url,
@@ -54,7 +55,7 @@ $(document).ready(function() {
             dataType: 'json',
             contentType: "application/json",
             success: function(data) {
-                var s = data.query.results;
+                var s = data.response;
                 if (s) {
                     if (s.quote.Change > 0) {
                         $('#stockChange').css({ 'color': 'green' });
