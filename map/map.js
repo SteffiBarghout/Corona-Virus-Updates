@@ -20,6 +20,7 @@ $(document).ready(function () {
       let dataArray = [["Country", "confirmed"]];
       let data = response.data.covid19Stats;
 
+
       let countryArray = [];
       for (let i = 0; i < data.length; i++) {
         if (!countryArray.includes(data[i].country)) {

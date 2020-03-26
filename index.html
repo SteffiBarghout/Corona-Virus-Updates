@@ -32,8 +32,8 @@
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 </head>
 
 <body>
@@ -130,8 +130,7 @@
               <h2>New York Times</h2>
             </div>
             <div class="card-block">
-              <div class="canvas-wrapper">
-                <canvas class="chart" id="new-york-times" height="auto" width="auto"></canvas>
+              <div id="nytarticles" class="canvas-wrapper">
               </div>
             </div>
           </div>
@@ -193,10 +192,14 @@
         <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini,
           Steffi Wellington</p>
       </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      <script src="news.js"></script>
       <script src="https://d3js.org/d3.v3.min.js"></script>
-      <script src="map/map.js" async></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&callback=initMap"
         async defer></script>
+      <script src="map/map.js" async></script>
+
 
       <script src="chart/chart.js"></script>
 </body>
