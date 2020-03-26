@@ -31,6 +31,9 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- jQuery for APIs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -139,17 +142,52 @@
                 <div class="column column-100">
                     <div class="card">
                         <div class="card-title">
-                            <h2>Alpha Vantage</h2>
+                            <h2>Stock Information from Alpha Vantage</h2>
                         </div>
                         <div class="card-block">
-                            <div class="canvas-wrapper">
-                                <canvas class="chart" id="alpha-advantage" height="auto" width="auto"></canvas>
-                            </div>
+                            <form action="#" onsubmit="event.preventDefault(); postComment()">
+                                <div id="stock_miniQuote_head" class="ajaxtrigger"><span id="stockSymbol"></span>&nbsp;(common stock)</div>
+
+                                <div id="stock_miniQuote">
+                                    <div id="stockIndicator">
+                                        <p>Retrieving stock information...</p>
+                                    </div>
+                                    <div class="stock_divider">
+                                        <div id="stock_left">
+                                            <span class="stock_label">Price</span><br/>
+                                            <strong class="stock_strong">$<span id="stockAsk"></span></strong><br/>
+                                        </div>
+                                        <div id="stock_right">
+                                            <span class="stock_label">Change</span><br/>
+                                            <strong class="stock_strong"><span id="stockChange"></span></strong><br />
+                                            <strong class="stock_strong"><span id="stockChangePercent"></span></strong><br />
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                    <div id="stock_body">
+                                        <div id="stock_body_content">
+                                            <span class="stock_label">Volume</span><br/>
+                                            <strong class="stock_strong"><span id="stockVolume"></span></strong>
+                                            <br /><br />
+                                            <span class="stock_label">Average Daily Volume</span><br/>
+                                            <strong class="stock_strong"><span id="stockAvgVolume"></span></strong>
+                                            <br /><br />
+                                            <span class="stock_label">52 Week Range</span><br/>
+                                            <strong class="stock_strong"><span id="stockRange"></span></strong>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--<div class="information"></div>
+                            <div class="symbol"></div>
+                            <div class="lastrefreshed"></div>
+                            <div class="timezone"></div>-->
                         </div>
                     </div>
                 </div>
+                <script src="Stocks API /stocks.js"></script>
             </div>
-
             <!--Comments-->
             <h5 class="mt-2">Comments</h5>
             <a class="anchor" name="comments"></a>
@@ -157,7 +195,7 @@
                 <div class="column ">
                     <div class="card">
                         <div class="card-title">
-                            <h3>How has the CoronaVirus Impacted</h3>
+                            <h3>How has the CoronaVirus Impacted You?</h3>
                         </div>
                         <div class="card-block">
                             <form action="#" onsubmit="event.preventDefault(); postComment()">
@@ -179,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <script src="html5-admin/Comments Javascript/comments.js"></script>
+                <script src="Comments Javascript/comments.js"></script>
             </div>
 
             <!--Footer-->
