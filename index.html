@@ -31,6 +31,9 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- jQuery for APIs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -140,53 +143,90 @@
                 <div class="column column-100">
                     <div class="card">
                         <div class="card-title">
-                            <h2>Alpha Vantage</h2>
-                        </div>
-                        <div class="card-block">
-                            <div class="canvas-wrapper">
-                                <canvas class="chart" id="alpha-advantage" height="auto" width="auto"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Comments-->
-            <h5 class="mt-2">Comments</h5>
-            <a class="anchor" name="comments"></a>
-            <div class="row grid-responsive">
-                <div class="column ">
-                    <div class="card">
-                        <div class="card-title">
-                            <h3>How has the CoronaVirus Impacted</h3>
+                            <h2>Stock Information from Alpha Vantage</h2>
                         </div>
                         <div class="card-block">
                             <form action="#" onsubmit="event.preventDefault(); postComment()">
-                                <fieldset>
-                                    <label for="nameField">Name</label>
-                                    <input type="text" placeholder="John Smith" id="name">
+                                <div id="stock_miniQuote_head" class="ajaxtrigger"><span id="stockSymbol"></span>&nbsp;(common stock)</div>
 
-                                    <label for="locationField">Location</label>
-                                    <input type="text" placeholder="Anywhere, USA" id="location">
-
-                                    <label for="commentField">Comment</label>
-                                    <textarea placeholder="I am COVID-19 Safe" id="comment"></textarea>
-
-                                    <button>Submit</button>
-                                </fieldset>
+                                <div id="stock_miniQuote">
+                                    <div id="stockIndicator">
+                                        <p>Retrieving stock information...</p>
+                                    </div>
+                                    <div class="stock_divider">
+                                        <div id="stock_left">
+                                            <span class="stock_label">Price</span><br/>
+                                            <strong class="stock_strong">$<span id="stockAsk"></span></strong><br/>
+                                        </div>
+                                        <div id="stock_right">
+                                            <span class="stock_label">Change</span><br/>
+                                            <strong class="stock_strong"><span id="stockChange"></span></strong><br />
+                                            <strong class="stock_strong"><span id="stockChangePercent"></span></strong><br />
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                    <div id="stock_body">
+                                        <div id="stock_body_content">
+                                            <span class="stock_label">Volume</span><br/>
+                                            <strong class="stock_strong"><span id="stockVolume"></span></strong>
+                                            <br /><br />
+                                            <span class="stock_label">Average Daily Volume</span><br/>
+                                            <strong class="stock_strong"><span id="stockAvgVolume"></span></strong>
+                                            <br /><br />
+                                            <span class="stock_label">52 Week Range</span><br/>
+                                            <strong class="stock_strong"><span id="stockRange"></span></strong>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
                             </form>
-                            <h5><span>Comments</span></h5>
-                            <div id="comments"></div>
+                            <!--<div class="information"></div>
+                            <div class="symbol"></div>
+                            <div class="lastrefreshed"></div>
+                            <div class="timezone"></div>-->
                         </div>
                     </div>
                 </div>
-                <script src="Comments Javascript/comments.js"></script>
             </div>
+            <script src="Stocks API /stocks.js"></script>
+    </div>
 
-            <!--Footer-->
-            <div class="footer">
-                <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
+    <!--Comments-->
+    <h5 class="mt-2">Comments</h5>
+    <a class="anchor" name="comments"></a>
+    <div class="row grid-responsive">
+        <div class="column ">
+            <div class="card">
+                <div class="card-title">
+                    <h3>How has the CoronaVirus Impacted You?</h3>
+                </div>
+                <div class="card-block">
+                    <form action="#" onsubmit="event.preventDefault(); postComment()">
+                        <fieldset>
+                            <label for="nameField">Name</label>
+                            <input type="text" placeholder="John Smith" id="name">
+
+                            <label for="locationField">Location</label>
+                            <input type="text" placeholder="Anywhere, USA" id="location">
+
+                            <label for="commentField">Comment</label>
+                            <textarea placeholder="I am COVID-19 Safe" id="comment"></textarea>
+
+                            <button>Submit</button>
+                        </fieldset>
+                    </form>
+                    <h5><span>Comments</span></h5>
+                    <div id="comments"></div>
+                </div>
             </div>
+        </div>
+        <script src="Comments Javascript/comments.js"></script>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>COVID-19 AWARE <br> copyright &copy; 2020 <br> created by Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington</p>
+    </div>
 
 </body>
 
