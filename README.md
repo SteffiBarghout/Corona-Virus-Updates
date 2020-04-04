@@ -19,12 +19,23 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
     * Firebase, GoogleDev GeoChart
     * Rapid API, Alpha Vantage API, New York Times API
     
-### Resources: 
-  
-    * HTML, CSS, SASS, jQuery, Javascript
-    * Firebase, GoogleDev GeoChart
-    * Rapid API, Alpha Vantage API, New York Times API
-  
+### Individual Responsibilities: 
+  ####Joewan:
+    * New York Times API
+    * Initial Brainstorm
+    
+   ####Lindsey:
+    * Front-end UI Design Implementation
+    * Mobile responsiveness
+    
+   ####Sean:
+    * Rapid API
+    * Google Dev Geo Chart
+   
+   ####Steffi:
+    * Firebase
+    * Alpha Vantage API
+    
 
 <a href="https://steffisbootcampdrive.github.io/Project1/" target="_blank">
    <img src="assets/img/portfolioImage.png">
