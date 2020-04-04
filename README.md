@@ -20,19 +20,19 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
     * Rapid API, Alpha Vantage API, New York Times API
     
 ### Individual Responsibilities: 
-  ####Joewan:
+   #### Joewan:
     * New York Times API
     * Initial Brainstorm
     
-   ####Lindsey:
+   #### Lindsey:
     * Front-end UI Design Implementation
     * Mobile responsiveness
     
-   ####Sean:
+   #### Sean:
     * Rapid API
     * Google Dev Geo Chart
    
-   ####Steffi:
+   #### Steffi:
     * Firebase
     * Alpha Vantage API
     
