@@ -5,7 +5,7 @@ created by: Joewan Eiland, Lindsey Tummond, Sean Baklini, Steffi Wellington
 
 COVID-19 AWARE is a centralized website that provides situation updates, media resources, and stock market news at your fingertips.
 
-### Link to Portfolio: https://steffisbootcampdrive.github.io/Project1/
+### Link to Portfolio: https://steffisbootcampdrive.github.io/Corona-Virus-Updates/
 
 ### Motivations: 
   
