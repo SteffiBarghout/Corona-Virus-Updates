@@ -37,6 +37,6 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
     * Alpha Vantage API
     
 
-<a href="https://steffisbootcampdrive.github.io/Project1/" target="_blank">
+<a href="https://steffisbootcampdrive.github.io/Corona-Virus-Updates/" target="_blank">
    <img src="assets/final-image.png">
 </a>
