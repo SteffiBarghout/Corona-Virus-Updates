@@ -38,5 +38,5 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
     
 
 <a href="https://steffisbootcampdrive.github.io/Project1/" target="_blank">
-   <img src="assets/img/portfolioImage.png">
+   <img src="assets/final-image.png">
 </a>
