@@ -13,7 +13,7 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
 + Sean Baklini: [GitHub](https://github.com/Sean-source)
     * Rapid API
     * Google Dev Geo Chart
-- Steffi Wellington: [GitHub](https://github.com/steffisbootcampdrive)
+- Steffi Barghout: [GitHub](https://github.com/SteffiBarghout)
     * Firebase
     * Alpha Vantage API
 
@@ -42,7 +42,7 @@ COVID-19 AWARE is a centralized website that provides situation updates, media r
     -   New York Times
 
 ## How the app works:
-Use the following link https://steffisbootcampdrive.github.io/Corona-Virus-Updates/ to open the application. <br>
+Use the following link https://steffibarghout.github.io/Corona-Virus-Updates/ to open the application. <br>
 
 1.  Use navigation column on the left to target a section of the app.
 2.	Heat Map utilizes Rapid API to showcase confirmed cases of Covid-19 based on the latest information.
